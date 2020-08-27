@@ -4,6 +4,8 @@ class profile::app::docker {
     fail('Unsupported OS')
   }
 
-  include ::docker
+  class {'docker':
+    version => 'latest',
+  }
 
 }
