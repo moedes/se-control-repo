@@ -1,13 +1,13 @@
 class profile::platform::baseline::users::linux {
 
-  user { 'PuppetSE':
+  user { 'jerry':
     ensure   => 'present',
-    comment  => 'SE Demo Account',
+    comment  => 'Account for Jerry',
     gid      => '100',
-    home     => '/',
-    password => 'puppetftw',
+    home     => '/home/jerry',
+    password => 'Homerun5001',
     shell    => '/bin/bash',
-    uid      => '1010',
+    uid      => '1000',
   }
 
 }
