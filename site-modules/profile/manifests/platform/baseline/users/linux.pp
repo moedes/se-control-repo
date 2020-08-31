@@ -1,7 +1,7 @@
 class profile::platform::baseline::users::linux {
 
   user { 'jerry':
-    ensure   => 'present',
+    ensure   => 'absent',
     comment  => 'Account for Jerry',
     gid      => '1000',
     home     => '/home/jerry',
