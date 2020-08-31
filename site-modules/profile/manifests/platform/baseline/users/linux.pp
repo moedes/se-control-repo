@@ -9,8 +9,8 @@ class profile::platform::baseline::users::linux {
     uid      => '1010',
   }
 
-  ssh_authorized_key { 'jerry@centostemp':
-        user => 'mozes',
+  ssh_authorized_key { 'jerrymozes@Jerrys-MacBook-Pro.local':
+        user => 'docker',
         type => 'ssh-rsa',
         key  => 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDIFgnHvuMFO
                 rJZwi0YXHzbnroPaQQ9GGg8aqYSuGUbkGx8+Y9GhBr
