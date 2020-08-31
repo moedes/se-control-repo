@@ -7,7 +7,7 @@ class profile::platform::baseline::users::linux {
     home     => '/home/jerry',
     password => 'puppetftw',
     shell    => '/bin/bash',
-    uid      => '1000',
+    uid      => '1001',
   }
 
 }
