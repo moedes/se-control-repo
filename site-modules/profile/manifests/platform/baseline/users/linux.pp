@@ -16,6 +16,7 @@ class profile::platform::baseline::users::linux {
 
   file {'/home/docker/.ssh':
     ensure   => directory,
+    mode     => 0664,
     require  => File['/home/docker']
   }
 
