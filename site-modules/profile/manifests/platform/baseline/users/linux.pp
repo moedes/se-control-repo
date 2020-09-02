@@ -11,14 +11,14 @@ class profile::platform::baseline::users::linux {
 
   file {'/home/docker':
     ensure   => directory,
-    mode     => '0660',
+    mode     => '0755',
     owner    => 'docker',
     require  => User['docker']
   }
 
   file {'/home/docker/.ssh':
     ensure   => directory,
-    mode     => '0700',
+    mode     => '0755',
     owner    => 'docker',
     group    => 'docker',
     require  => File['/home/docker']
@@ -29,7 +29,7 @@ class profile::platform::baseline::users::linux {
     owner    => 'docker',
     group    => 'docker',
     require  => File['/home/docker/.ssh'],
-    mode     => '0700'
+    mode     => '0755'
   }
 
   ssh_authorized_key { 'jerrymozes@Jerrys-MacBook-Pro.local':
