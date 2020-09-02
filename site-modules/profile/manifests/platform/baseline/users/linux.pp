@@ -12,7 +12,7 @@ class profile::platform::baseline::users::linux {
   ssh_authorized_key { 'jerrymozes@Jerrys-MacBook-Pro.local':
         user => 'docker',
         type => 'ssh-rsa',
-        key  => 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDIFgnHvuMFOrJZwi0YXHzbnroPaQQ9GGg8aqYSuGUbkGx8+Y9GhBrb/GAcamxkYXU66E11s1CksGFhlQDfpw56wTYVV33pPLCFE0LygAmyY8MnSlxDRcJmcp7V3g11B5Jt4xopBAagA5WZC3wx6VRlYM5ub1US51DXJWQTZW6b5ok+lqrrW/Qk4VlLu8wdyKrrBAaTvk421YOltU3gMLfltsZoIH5gt1n3aVLC271Pw9KNKeMndD1KEubfph+9Qtv7Wg5ziBZfiP29KJPRHE9BiWMaTGEPwlMHuGKKAh6ZYggaKALcnnTAtgtqYDEPxmabZSgb9H6hgJ+cvyz5wSFEzCdulJi5WziJyfdq5N/btTMUbq9PqpqOsd/e/Yb4alZdLROqRGsjw6IAiH9kHeG9F3jCl/AXvI/JtygVobb9hkTk1kRnmrMO83DQ8RTaGMZWQqseQXVUW98wWo2yFDOdCKtxGMBY9Fv1hffse6ctR/D6Ohnbgg/dIeLoHV4/Ykme/V6YcD23AfGu+ErhRwYuNS7m9qqobBowkgdfDlfwLN1o6DvmLk+91aWTdVv9XAX66pzkOqrceQ6fCzfRU4IvTRO2SqlQly+NpkMd2VLe38kbT59y2br/EREmamaX+4tkSjMOqq4z4DokXUfvWX3Pmd/d1paLsmlCs06+JwcHhw==',
+        key  => 'AAAAB3NzaC1yc2EAAAADAQABAAACAQD04mlfh896fIyT8b70DGBYpqSS6KyhGYLEjQryYD5+txxIH1TzhQaR2of8Ht1GRIZaMBlCPN6t2Uy04Z4uGPhglazNN+titbWWPBKkh0EtlPalwFvwnrfhSiXuoOwy0fCmrq0+Z62Vw+mESf2YAgwfA6ClXWWSvxVTlbblbkAc7QTdbYkLY3zMpcZGZJcDOzrjAE0YHaATlVCwQL1aCLjeKUd9tm4inofmLp2GaqottvnDqiMYQ3wuqgyCROhgm0l0EmPchQ2tTZQB9gJiU/6zsZkUjxjdR5Z3geuckCUquM+ObCziuLICS1GPu4O+9+DGzWnbYXa5HjwtR6EGo5qmaDYdaOlSYmaPJM3BYc6Rdb5TOuq40BUIz4/MLWeWYt2Y+ORJJpFW+ifp5UDJtD742JwmGJhsJzor7rXfioUVqSFPGGDmF427pwC77e+LzE6zhI1db0YdgXy1a9jKE+27J6d+FW0eEcpnvR58/upW6SVMx1lORGkPvSV5mqoAY2oTx53EF7OcB/JE7HFoiHHrsBWFu8uVGG4Z6ii9n/bGFm4+wP6XzhXuFXRGy7izYZiZbkBMwbNBqmjV7J1uTQ/GojiO0pLK+CZhsB+o3WoLaGcZiHuOzQJZEogbfO58b5LZKvCt7oFQ/t5a/b/1qA+9ek2qp+vvwHmvZBDfSRWLyQ==',
   }
 
 }
