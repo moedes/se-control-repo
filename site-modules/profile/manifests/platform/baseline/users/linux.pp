@@ -22,6 +22,12 @@ class profile::platform::baseline::users::linux {
     require  => File['/home/docker']
   }
 
+  file {'/home/docker/.ssh/authorized_keys':
+    ensure   => present,
+    require  => File['/home/docker/.ssh'],
+    mode     => '0700'
+  }
+
   ssh_authorized_key { 'jerrymozes@Jerrys-MacBook-Pro.local':
     user     => 'docker',
     type     => 'ssh-rsa',
