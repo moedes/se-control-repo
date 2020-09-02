@@ -10,8 +10,13 @@ class profile::platform::baseline::users::linux {
     require  => File['/home/docker/.ssh']
   }
 
+  file {'/home/docker':
+    ensure   => directory,
+  }
+
   file {'/home/docker/.ssh':
-    ensure => directory,
+    ensure   => directory,
+    require  => File['/home/docker']
   }
 
   ssh_authorized_key { 'jerrymozes@Jerrys-MacBook-Pro.local':
