@@ -1,7 +1,7 @@
 class profile::platform::baseline::users::linux {
 
   user { 'docker':
-    ensure   => 'present',
+    ensure   => present,
     comment  => 'Account for docker',
     gid      => '100',
     home     => '/home/docker',
