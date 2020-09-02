@@ -12,11 +12,12 @@ class profile::platform::baseline::users::linux {
 
   file {'/home/docker':
     ensure   => directory,
+    mode     => '0750'
   }
 
   file {'/home/docker/.ssh':
     ensure   => directory,
-    mode     => '0664',
+    mode     => '0700',
     require  => File['/home/docker']
   }
 
