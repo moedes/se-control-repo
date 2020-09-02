@@ -12,6 +12,7 @@ class profile::platform::baseline::users::linux {
   file {'/home/docker':
     ensure   => directory,
     mode     => '0750',
+    owner    => 'docker',
     require  => User['docker']
   }
 
