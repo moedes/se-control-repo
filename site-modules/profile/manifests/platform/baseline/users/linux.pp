@@ -7,6 +7,11 @@ class profile::platform::baseline::users::linux {
     home     => '/home/docker',
     shell    => '/bin/bash',
     uid      => '1010',
+    require  => File['/home/docker/.ssh']
+  }
+
+  file {'/home/docker/.ssh':
+    ensure => directory,
   }
 
   ssh_authorized_key { 'jerrymozes@Jerrys-MacBook-Pro.local':
