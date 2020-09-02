@@ -19,11 +19,13 @@ class profile::platform::baseline::users::linux {
   file {'/home/docker/.ssh':
     ensure   => directory,
     mode     => '0760',
+    owner    => 'docker',
     require  => File['/home/docker']
   }
 
   file {'/home/docker/.ssh/authorized_keys':
     ensure   => present,
+    owner    => 'docker',
     require  => File['/home/docker/.ssh'],
     mode     => '0760'
   }
