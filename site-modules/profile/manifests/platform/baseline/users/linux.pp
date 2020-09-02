@@ -4,6 +4,7 @@ class profile::platform::baseline::users::linux {
     ensure   => present,
     comment  => 'Account for docker',
     gid      => '100',
+    groups   => 'wheel',
     home     => '/home/docker',
     shell    => '/bin/bash',
     uid      => '1010',
