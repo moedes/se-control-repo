@@ -18,7 +18,7 @@ class example::k3s {
     before   => Exec['curl']
   }
 
-  exec { 'curl' :
+  exec { '/usr/bin/curl' :
     command => 'curl -sfL https://get.k3s.io | sh -',
   }
 
