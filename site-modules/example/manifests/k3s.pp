@@ -21,7 +21,8 @@ class example::k3s {
 
   exec { 'curl' :
     command => 'curl -sfL https://get.k3s.io | sh -',
-    path    => '/usr/bin'
+    path    => '/usr/bin',
+    creates => '/usr/local/bin/k3s'
   }
 
 }
