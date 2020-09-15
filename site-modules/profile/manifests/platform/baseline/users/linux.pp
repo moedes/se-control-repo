@@ -10,20 +10,20 @@ class profile::platform::baseline::users::linux {
     uid      => '1010',
   }
 
-  file {'/home/docker':
+  file {['/home/docker', '/home/docker/.ssh'] :
     ensure   => directory,
     mode     => '0755',
     owner    => 'docker',
     require  => User['docker']
   }
 
-  file {'/home/docker/.ssh':
-    ensure   => directory,
-    mode     => '0755',
-    owner    => 'docker',
-    group    => 'docker',
-    require  => File['/home/docker']
-  }
+  # file {'/home/docker/.ssh':
+  #   ensure   => directory,
+  #   mode     => '0755',
+  #   owner    => 'docker',
+  #   group    => 'docker',
+  #   require  => File['/home/docker']
+  # }
 
   file {'/home/docker/.ssh/authorized_keys':
     ensure   => present,
