@@ -5,7 +5,7 @@ class example::rkeworker {
         path         => '/usr/bin/rke',
         source       => 'https://github.com/rancher/rke/releases/download/v1.1.8-rc1/rke_linux-amd64',
         mode         => '+x',
-        checksum     => 'md5'
+        checksum     => md5
     }
 
 }
