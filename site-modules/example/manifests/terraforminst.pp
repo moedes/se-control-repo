@@ -5,7 +5,7 @@ class example::terraforminst {
     ensure => 'present',
   }
 
-  archive { '/usr/bin/terraform':
+  archive { '/usr/bin/terraform_0.13.3_linux_amd64.zip':
     ensure  => present,
     extract => true,
     extract_path => '/usr/bin',
