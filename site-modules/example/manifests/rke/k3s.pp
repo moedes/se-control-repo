@@ -1,4 +1,4 @@
-class example::k3s {
+class example::rke::k3s {
 
   package { 'container-selinux' :
     ensure   => present,

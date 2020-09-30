@@ -1,4 +1,4 @@
-class example::kubectl {
+class example::rke::kubectl {
 
   file {'kubectl':
     ensure => file,

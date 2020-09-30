@@ -1,4 +1,4 @@
-class example::rkeworker {
+class example::rke::rkeworker {
 
     file {'rke':
         ensure    => file,
