@@ -3,10 +3,10 @@ class example::rkeworker {
     file {'rke':
         ensure    => file,
         path      => '/usr/bin/rke',
-        source    => 'https://github.com/rancher/rke/releases/download/v1.1.7/rke_linux-amd64',
+        source    => 'https://github.com/rancher/rke/releases/download/v1.2.0-rc9/rke_linux-amd64',
         mode      => '+x',
         checksum  => 'sha256',
-        checksum_value => 'ebc62233f213762ef9686ac9029638f646269d17843ed7b0e4dbd9df5921b855'
+        checksum_value => '3ea5099c0b11883980734a104d3f5699c7d82be19849d016116b6ef0fba78ac4'
     }
 
 }
