@@ -1,5 +1,6 @@
 class example::rke::dockeruser (
   String $dockeruser,
+  String $dockerkey,
 ){
 
   user { $dockeruser :
