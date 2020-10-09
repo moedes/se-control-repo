@@ -1,6 +1,8 @@
-class example::rke::dockeruser {
+class example::rke::dockeruser (
+  String $dockeruser,
+){
 
-  user { 'docker':
+  user { $dockeruser :
     ensure   => present,
     comment  => 'Account for docker',
     gid      => '100',
