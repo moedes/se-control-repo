@@ -12,7 +12,12 @@ hiera::cmdpath:
   - /usr/bin
   - /usr/local/bin
   - /opt/puppetlabs/puppet/lib/ruby/vendor_gems/bin
+
   
+##
+# Set RKE Docker User Config
+example::rke::dockeruser: "docker"
+
 ## 
 # Enable Package Inventory by default
 puppet_enterprise::profile::agent::package_inventory_enabled: true
