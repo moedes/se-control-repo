@@ -1,0 +1,10 @@
+---
+
+version: 5
+
+datadir: data
+data_hash: yaml_data
+
+hierarchy:
+  - name: "Module Data"
+    path: "example.yaml"

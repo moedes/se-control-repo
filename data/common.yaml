@@ -14,8 +14,8 @@ hiera::cmdpath:
   - /opt/puppetlabs/puppet/lib/ruby/vendor_gems/bin
 
 ## Classes
-classes: 
-  - role::cisco::nexus
+#classes: 
+#  - role::cisco::nexus
 ##
 # Set RKE Docker User Config
 example::rke::dockeruser::dockeruser: "docker"
