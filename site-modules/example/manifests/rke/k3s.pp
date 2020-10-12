@@ -1,16 +1,18 @@
-class example::rke::k3s {
+class example::rke::k3s (
+  Array $selinux,
+) {
 
-  package { 'container-selinux' :
+  package { $selinux :
     ensure   => present,
     provider => 'yum',
     before   => Exec['curl']
   }
 
-  package { 'selinux-policy-base' :
-    ensure   => present,
-    provider => 'yum',
-    before   => Exec['curl']
-  }
+  # package { 'selinux-policy-base' :
+  #   ensure   => present,
+  #   provider => 'yum',
+  #   before   => Exec['curl']
+  # }
 
   package { 'k3s-selinux' :
     ensure   => present,
