@@ -1,5 +1,5 @@
 class example::rke::dockeruser (
-  String $dockeruser,
+  String $dockeruser = lookup('dockeruser', String, unique, "docker"), # must be a String, unique finds all keys in the hiera hierarchy and strips any duplicates while combining non-duplicates, if nothing found set it to docker
   String $dockerkey,
 ){
 
@@ -16,8 +16,8 @@ class example::rke::dockeruser (
   file {['/home/docker', '/home/docker/.ssh'] :
     ensure   => directory,
     mode     => '0755',
-    owner    => 'docker',
-    require  => User['docker']
+    owner    => $dockeruser,
+    require  => User[$dockeruser]
   }
 
   # file {'/home/docker/.ssh':
@@ -30,14 +30,14 @@ class example::rke::dockeruser (
 
   file {'/home/docker/.ssh/authorized_keys':
     ensure   => present,
-    owner    => 'docker',
+    owner    => $dockeruser,
     group    => 'docker',
     require  => File['/home/docker/.ssh'],
     mode     => '0755'
   }
 
   ssh_authorized_key { 'jerrymozes@Jerrys-MacBook-Pro.local':
-    user     => 'docker',
+    user     => $dockeruser,
     type     => 'ssh-rsa',
     key      => $dockerkey,
     require  => File['/home/docker/.ssh']

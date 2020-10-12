@@ -9,7 +9,7 @@ site {
 }
 
 node default {
-  # Check if we've set the role for this node via trusted fact, pp_role.  If yes; include that role directly here.
+  # Check if we have set the role for this node via trusted fact, pp_role.  If yes; include that role directly here.
   if !empty( $trusted['extensions']['pp_role'] ) {
     $role = $trusted['extensions']['pp_role']
     if defined("role::${role}") {
@@ -17,3 +17,8 @@ node default {
     }
   }
 }
+
+# $classes = lookup('classes', Array, unique, "")
+# $excluded_classes = lookup('excluded_classes', Array, unique, "")
+# $total_classes = $classes - $excluded_classes
+# include $total_classes

@@ -11,7 +11,7 @@ profile::infrastructure::network::nexus::vlans:
     shutdown: 'false'
     state: 'active'
     vlan_name: 'research-vlan'
-  "300":
+  "400":
     ensure: 'present'
     shutdown: 'false'
     state: 'active'
