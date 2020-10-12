@@ -1,6 +1,7 @@
 class example::rke::dockeruser (
   String $dockeruser = lookup('dockeruser', String, unique, "docker"), # must be a String, unique finds all keys in the hiera hierarchy and strips any duplicates while combining non-duplicates, if nothing found set it to docker
   String $dockerkey,
+  String $dockerhome,
 ){
 
   user { $dockeruser :
@@ -8,12 +9,12 @@ class example::rke::dockeruser (
     comment  => 'Account for docker',
     gid      => '100',
     groups   => ['wheel', 'docker'],
-    home     => '/home/docker',
+    home     => $dockerhome,
     shell    => '/bin/bash',
     uid      => '1010',
   }
 
-  file {['/home/docker', '/home/docker/.ssh'] :
+  file {[$dockerhome, '/home/docker/.ssh'] :
     ensure   => directory,
     mode     => '0755',
     owner    => $dockeruser,
