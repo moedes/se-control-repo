@@ -5,6 +5,14 @@ lookup_options:
   '^cd4pe::root_config::ssl_server_private_key$':
     convert_to: 'Sensitive'
 
+ntp::servers:
+  - 0.us.pool.ntp.org
+  - 1.us.pool.ntp.org
+  - 2.us.pool.ntp.org
+  - 3.us.pool.ntp.org
+
+ntp::ensure: 'running'
+
 ##
 # Hiera
 hiera::cmdpath:
