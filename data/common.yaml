@@ -19,7 +19,7 @@ ntp::tinker: false
 
 classes:
   - ntp
-  - firewall
+  # - firewall
 
 # ntp::peers:
 #   - 0.us.pool.ntp.org
