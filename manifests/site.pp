@@ -16,7 +16,7 @@ node default {
       include "role::${role}"
     }
   }
-  include classes
+  hiera_include(classes)
 }
 
 # $classes = lookup('classes', Array, unique, "")
