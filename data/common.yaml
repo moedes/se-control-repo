@@ -13,6 +13,7 @@ ntp::servers:
 ntp::service_ensure: 'running'
 
 ntp::logfile: '/var/log/ntpd.log'
+ntp::tinker: true
 
 ##
 # Hiera
