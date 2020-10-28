@@ -1,5 +1,8 @@
 ## site.pp ##
 
+# Class declarations and lookup
+$classes = lookup('classes', Array, unique, "")
+
 # Disable filebucket by default for all File resources:
 File { backup => false }
 
@@ -16,7 +19,7 @@ node default {
       include "role::${role}"
     }
   }
-  hiera_include(classes)
+  include $classes
 }
 
 # $classes = lookup('classes', Array, unique, "")
