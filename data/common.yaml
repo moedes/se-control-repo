@@ -15,7 +15,7 @@ ntp::service_ensure: 'running'
 ntp::logfile: '/var/log/ntpd.log'
 ntp::tinker: false
 
-firewall: 'stopped'
+# firewall: 'stopped'
 
 classes:
   - ntp
