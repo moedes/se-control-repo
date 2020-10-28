@@ -15,8 +15,11 @@ ntp::service_ensure: 'running'
 ntp::logfile: '/var/log/ntpd.log'
 ntp::tinker: false
 
+firewall: 'stopped'
+
 classes:
   - ntp
+  - firewall
 
 # ntp::peers:
 #   - 0.us.pool.ntp.org
