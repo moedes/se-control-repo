@@ -15,11 +15,11 @@ ntp::service_ensure: 'running'
 ntp::logfile: '/var/log/ntpd.log'
 ntp::tinker: true
 
-ntp::peers:
-  - 0.us.pool.ntp.org
-  - 1.us.pool.ntp.org
-  - 2.us.pool.ntp.org
-  
+# ntp::peers:
+#   - 0.us.pool.ntp.org
+#   - 1.us.pool.ntp.org
+#   - 2.us.pool.ntp.org
+
 ##
 # Hiera
 hiera::cmdpath:
