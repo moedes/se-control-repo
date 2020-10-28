@@ -15,6 +15,9 @@ ntp::service_ensure: 'running'
 ntp::logfile: '/var/log/ntpd.log'
 ntp::tinker: true
 
+classes:
+  - ntp
+
 # ntp::peers:
 #   - 0.us.pool.ntp.org
 #   - 1.us.pool.ntp.org
