@@ -16,6 +16,9 @@ node default {
       include "role::${role}"
     }
   }
+
+  class {'ntp':
+  }
 }
 
 # $classes = lookup('classes', Array, unique, "")
