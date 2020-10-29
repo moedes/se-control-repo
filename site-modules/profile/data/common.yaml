@@ -2,4 +2,4 @@
 
 profile::puppet::cafile::source: "puppet:///modules/profile/puppet/cafile/cert.pem"
 profile::puppet::cafile::ssldirectory: "/opt/puppetlabs/puppet/ssl"
-profile::puppet::cafile::certfile: "cert.pem"
+profile::puppet::cafile::certfile: "/opt/puppetlabs/puppet/ssl/cert.pem"
