@@ -11,6 +11,7 @@ ntp::servers:
   - 2.us.pool.ntp.org
 
 ntp::service_ensure: 'running'
+ntp::autoupdate: true
 
 ntp::logfile: '/var/log/ntpd.log'
 ntp::tinker: true
