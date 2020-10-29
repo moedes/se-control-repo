@@ -120,6 +120,7 @@ mod 'puppetlabs-sshkeys_core', '1.0.2'
 mod 'puppetlabs-selinux_core', '1.0.2'
 mod 'puppetlabs-augeas_core', '1.0.4'
 mod 'puppetlabs-host_core', '1.0.2'
+mod 'puppetlabs-pe_quick_data', '2.3.1'
 
 mod 'tse-tse_facts',
     git: 'https://github.com/puppetlabs/tse-module-tse_facts.git',
