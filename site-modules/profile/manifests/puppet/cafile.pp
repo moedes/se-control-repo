@@ -1,12 +1,16 @@
-class profile::puppet::cafile {
-  file {'/opt/puppetlabs/puppet/ssl':
+class profile::puppet::cafile (
+  String $source,
+  String $ssldirectory,
+  String $certfile
+) {
+
+  file {$ssldirectory :
     ensure => 'directory'
   }
 
-  file {'/opt/puppetlabs/puppet/ssl/cert.pem':
+  file {$ssldirectory + '/' + $source:
     ensure  => file,
-    source  => 'puppet:///modules/profile/puppet/cafile/cert.pem',
-    require => File['/opt/puppetlabs/puppet/ssl']
+    source  => $source,
+    require => File[$ssldirectory]
   }
-
 }
