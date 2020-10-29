@@ -8,7 +8,7 @@ class profile::puppet::cafile (
     ensure => 'directory'
   }
 
-  file {$ssldirectory + '/' + $certfile :
+  file { $ssldirectory/$certfile :
     ensure  => file,
     source  => $source,
     require => File[$ssldirectory]
