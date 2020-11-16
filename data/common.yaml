@@ -108,14 +108,14 @@ profile::app::sensu::server::subscriptions:
 
 ##
 # Device Manager
-device_manager::devices:
-  panos:
-    type: 'panos'
-    credentials:
-      host: 'panos.classroom.puppet.com'
-      user: 'admin'
-      password: 'puppetlabs'
-      ssl: false
+# device_manager::devices:
+#   panos:
+#     type: 'panos'
+#     credentials:
+#       host: 'panos.classroom.puppet.com'
+#       user: 'admin'
+#       password: 'puppetlabs'
+#       ssl: false
 
 profile::platform::baseline::enable_monitoring: false
 
