@@ -116,6 +116,7 @@ device_manager::devices:
       port:     443
       username: 'admin'
       password: 'Homerun5001'
+      transport: https
     run_interval: 30
 #   panos:
 #     type: 'panos'
