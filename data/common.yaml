@@ -115,8 +115,8 @@ device_manager::devices:
       address:  '9000v.puppet.demo'
       port:     443
       username: 'admin'
-      password: 'Homerun5001'
-      transport: https
+      password: 'Pa$$word123'
+      transport: 'https'
     run_interval: 30
 #   panos:
 #     type: 'panos'
