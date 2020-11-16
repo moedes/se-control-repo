@@ -111,7 +111,11 @@ profile::app::sensu::server::subscriptions:
 device_manager::devices:
   9000v.puppet.demo:
     type: cisco_nexus
-    url:  'https://admin:homerun5001@9000v.puppet.demo'
+    credentials:
+      address:  '9000v.puppet.demo'
+      port:     443
+      username: 'admin'
+      password: 'Homerun5001'
     run_interval: 30
 #   panos:
 #     type: 'panos'
