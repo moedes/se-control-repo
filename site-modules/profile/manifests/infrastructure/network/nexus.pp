@@ -3,7 +3,7 @@ class profile::infrastructure::network::nexus (
   Hash $vlans = {},
 ) {
 
-  include ciscopuppet::install
+  # include ciscopuppet::install
 
   $vlans.each |$vlan, $parameters| {
     cisco_vlan { $vlan:
