@@ -39,7 +39,7 @@ class profile::infrastructure::network::nexus (
     host_reachability => 'evpn',
     shutdown          => false,
     source_interface  => 'loopback1',
-  # }
+  }
 
   cisco_vxlan_vtep_vni {'nve1 10000':
     ensure              => present,
