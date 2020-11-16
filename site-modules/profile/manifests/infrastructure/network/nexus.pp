@@ -22,7 +22,7 @@ class profile::infrastructure::network::nexus (
       mtu                 => $parameters[mtu],
       shutdown            => $parameters[shutdown],
       access_vlan         => $parameters[access_vlan],
-      switchport_mode     => $parameters[switchport_mode],
+      # switchport_mode     => $parameters[switchport_mode],
     }
   }
 
