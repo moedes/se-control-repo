@@ -67,4 +67,4 @@ class profile::infrastructure::network::nexus (
 #     remote_as => '65004',
 #     require   => Cisco_bgp['65001 default'],
 #   }
-# }
+}
