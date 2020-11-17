@@ -19,12 +19,12 @@ profile::infrastructure::network::nexus::vlans:
 
 profile::infrastructure::network::nexus::interfaces:
   "ethernet1/1":
-    # ipaddress: "192.168.10.1"
-    # netmask: "24"
+    ipaddress: "192.168.10.1"
+    netmask: "24"
+    switchport_mode: disabled
     mtu: "1600"
     shutdown: false
-    switchport_mode: access
-    access_vlan: 1  # comment out when using switchport mode disabled
+    # access_vlan: 1  # comment out when using switchport mode disabled
   "ethernet1/2":
     shutdown: false
     mtu: "1500"
