@@ -34,9 +34,9 @@ profile::infrastructure::network::nexus::interfaces:
     shutdown: false
     mtu: "1500"
     switchport_mode: access
-    access_vlan: 200
+    access_vlan: 300
   "ethernet1/4":
     shutdown: true
     mtu: "1500"
     switchport_mode: access
-    access_vlan: 300
+    access_vlan: 400
