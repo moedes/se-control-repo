@@ -7,7 +7,7 @@ profile::infrastructure::network::nexus::vlans:
     state: 'active'
     vlan_name: 'engineering-vlan'
   "300":
-    ensure: 'absent'
+    ensure: 'present'
     shutdown: 'false'
     state: 'active'
     vlan_name: 'research-vlan'
