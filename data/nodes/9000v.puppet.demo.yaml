@@ -23,7 +23,7 @@ profile::infrastructure::network::nexus::interfaces:
     # netmask: "24"
     mtu: "1500"
     shutdown: false
-    switchport_mode: access
+    switchport_mode: disabled
     access_vlan: 400
   "ethernet1/2":
     shutdown: false
