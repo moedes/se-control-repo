@@ -24,7 +24,7 @@ profile::infrastructure::network::nexus::interfaces:
     mtu: "1500"
     shutdown: false
     switchport_mode: disabled
-    access_vlan: 400
+    # access_vlan: 1
   "ethernet1/2":
     shutdown: false
     mtu: "1500"
