@@ -22,7 +22,7 @@ profile::infrastructure::network::nexus::interfaces:
     # ipaddress: "192.168.10.1"
     # netmask: "24"
     # mtu: "1500"
-    # shutdown: false
+    shutdown: true
     switchport_mode: 'disabled'
     # access_vlan: 400
   "ethernet1/2":
