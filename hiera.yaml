@@ -9,6 +9,7 @@ hierarchy:
     lookup_key: eyaml_lookup_key
     paths:
       - 'nodes/%{::fqdn}.yaml'
+      - 'nodes/%{::clientcert}.yaml'
       - 'location/%{::location}/%{::role}.yaml'
       - 'role/%{::tier}/%{::role}.yaml'
       - 'role/%{::role}.yaml'
