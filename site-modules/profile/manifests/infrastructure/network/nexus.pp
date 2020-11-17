@@ -5,21 +5,14 @@ class profile::infrastructure::network::nexus (
 
   # include ciscopuppet::install
 
-  cisco_vlan {'200':
-    ensure    => 'present',
-    shutdown  => false,
-    state     => 'active',
-    vlan_name => 'engineering-vlan'
+  $vlans.each |$vlan, $parameters| {
+    cisco_vlan { $vlan:
+      ensure    => $parameters[ensure],
+      shutdown  => $parameters[shutdown],
+      state     => $parameters[state],
+      vlan_name => $parameters[vlan_name],
+    }
   }
-
-  # $vlans.each |$vlan, $parameters| {
-  #   cisco_vlan { $vlan:
-  #     ensure    => $parameters[ensure],
-  #     shutdown  => $parameters[shutdown],
-  #     state     => $parameters[state],
-  #     vlan_name => $parameters[vlan_name],
-  #   }
-  # }
 
   # $interfaces.each |$interface, $parameters| {
   #   cisco_interface { $interface:
