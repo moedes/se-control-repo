@@ -44,8 +44,8 @@ class profile::infrastructure::network::nexus (
   cisco_vxlan_vtep_vni {'nve1 10000':
     ensure              => present,
     assoc_vrf           => false,
-    ingress_replication => 'static',
-    peer_list           => ['4.4.4.4', '5.5.5.5'],
+    ingress_replication => 'default',
+    # peer_list           => ['4.4.4.4', '5.5.5.5'],
   }
 
   cisco_command_config { 'features':
