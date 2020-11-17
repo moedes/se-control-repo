@@ -3,8 +3,6 @@ class profile::infrastructure::network::nexus (
   Hash $vlans = {},
 ) {
 
-  # include ciscopuppet::install
-
   $vlans.each |$vlan, $parameters| {
     cisco_vlan { $vlan:
       ensure    => $parameters[ensure],
