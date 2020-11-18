@@ -11,8 +11,8 @@ ntp::servers:
   - 2.us.pool.ntp.org
 
 dns::servers:
-  - 192.168.25.110
-  - 8.8.8.8
+  - '192.168.25.110'
+  - '8.8.8.8'
 
 ntp::service_ensure: 'running'
 
