@@ -1,8 +1,15 @@
 class profile::infrastructure::network::nexus (
   Hash $interfaces = {},
   Hash $vlans = {},
+  Hash $dnsservers = lookup('dns::servers'),
 ) {
 
+  network_dns {'settings':
+    ensure   => 'present',
+    domain   => 'puppet.demo',
+    hostname => '9000v',
+    servers  => $dnsservers
+  }
   $vlans.each |$vlan, $parameters| {
     cisco_vlan { $vlan:
       ensure    => $parameters[ensure],
