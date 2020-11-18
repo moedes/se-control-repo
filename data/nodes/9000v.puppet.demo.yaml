@@ -24,7 +24,7 @@ profile::infrastructure::network::nexus::interfaces:
     switchport_mode: disabled
     mtu: "1600"
     shutdown: false
-    # access_vlan: 1  # comment out when using switchport mode disabled
+    # access_vlan: 1  # comment out when using switchport mode disabled using layer 3
   "ethernet1/2":
     shutdown: false
     mtu: "1500"
