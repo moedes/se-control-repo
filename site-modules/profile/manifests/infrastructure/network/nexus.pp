@@ -7,7 +7,7 @@ class profile::infrastructure::network::nexus (
   network_dns {'settings':
     ensure   => 'present',
     domain   => 'puppet.demo',
-    hostname => '9000v',
+    hostname => 'cisco9k',
     servers  => $dnsservers
   }
 
