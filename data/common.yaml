@@ -10,6 +10,10 @@ ntp::servers:
   - 1.us.pool.ntp.org
   - 2.us.pool.ntp.org
 
+dns::servers:
+  - 192.168.25.110
+  - 8.8.8.8
+
 ntp::service_ensure: 'running'
 
 ntp::logfile: '/var/log/ntpd.log'
