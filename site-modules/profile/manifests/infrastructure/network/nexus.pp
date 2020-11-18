@@ -10,6 +10,7 @@ class profile::infrastructure::network::nexus (
     hostname => '9000v',
     servers  => $dnsservers
   }
+
   $vlans.each |$vlan, $parameters| {
     cisco_vlan { $vlan:
       ensure    => $parameters[ensure],
