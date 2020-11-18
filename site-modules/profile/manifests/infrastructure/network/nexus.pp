@@ -1,7 +1,7 @@
 class profile::infrastructure::network::nexus (
   Hash $interfaces = {},
   Hash $vlans = {},
-  Hash $dnsservers = lookup('dns::servers'),
+  Array $dnsservers = lookup('dns::servers'),
 ) {
 
   network_dns {'settings':
