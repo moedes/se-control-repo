@@ -53,5 +53,6 @@ class profile::platform::baseline::users::linux {
   group { 'pe-puppet':
     ensure => present,
     gid    => '200',
+    before => User['pe-puppet']
   }
 }
