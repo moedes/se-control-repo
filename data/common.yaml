@@ -122,8 +122,7 @@ device_manager::devices:
       password:  'Pa$$word123'
       transport: 'https'
     run_interval: 30
-    run_user:  'root'
-    run_group: 'root'
+
 #   panos:
 #     type: 'panos'
 #     credentials:
