@@ -2,12 +2,13 @@ class profile::infrastructure::network::nexus (
   Hash $interfaces = {},
   Hash $vlans = {},
   Array $dnsservers = lookup('dns::servers'),
+  String $hostname,
 ) {
 
   network_dns {'settings':
     ensure   => 'present',
     domain   => 'puppet.demo',
-    hostname => 'cisco9k',
+    hostname => $hostname,
     servers  => $dnsservers
   }
 
