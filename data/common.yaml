@@ -116,10 +116,10 @@ device_manager::devices:
   9000v.puppet.demo:
     type: cisco_nexus
     credentials:
-      address:  '9000v.puppet.demo'
-      port:     443
-      username: 'admin'
-      password: 'Pa$$word123'
+      address:   '9000v.puppet.demo'
+      port:      443
+      username:  'admin'
+      password:  'Pa$$word123'
       transport: 'https'
     run_interval: 30
 #   panos:
