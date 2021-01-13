@@ -114,25 +114,25 @@ profile::app::sensu::server::subscriptions:
 # Device Manager
 device_manager::devices:
   9000v.puppet.demo:
-      ensure: absent
-  #   type: cisco_nexus
-  #   credentials:
-  #     address:   '9000v.puppet.demo'
-  #     port:      443
-  #     username:  'admin'
-  #     password:  'Pa$$word123'
-  #     transport: 'https'
-  #   run_interval: 30  
+    ensure: absent
+    type: cisco_nexus
+    credentials:
+      address:   '9000v.puppet.demo'
+      port:      443
+      username:  'admin'
+      password:  'Pa$$word123'
+      transport: 'https'
+    run_interval: 30  
   nxos9ksw2.puppet.demo:
-      ensure: absent
-  #   type: cisco_nexus
-  #   credentials:
-  #     address:   'nxos9ksw2.puppet.demo'
-  #     port:      443
-  #     username:  'cisco'
-  #     password:  'cisco'
-  #     transport: 'https'
-  #   run_interval: 30
+    ensure: absent
+    type: cisco_nexus
+    credentials:
+      address:   'nxos9ksw2.puppet.demo'
+      port:      443
+      username:  'cisco'
+      password:  'cisco'
+      transport: 'https'
+    run_interval: 30
   
 #   panos:
 #     type: 'panos'
