@@ -133,6 +133,16 @@ device_manager::devices:
       password:  'cisco'
       transport: 'https'
     run_interval: 30
+  nxos9ksw1.puppet.demo:
+    ensure: present
+    type: cisco_nexus
+    credentials:
+      address:   'nxos9ksw1.puppet.demo'
+      port:      443
+      username:  'cisco'
+      password:  'cisco'
+      transport: 'https'
+    run_interval: 30
   
 #   panos:
 #     type: 'panos'
