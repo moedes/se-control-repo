@@ -114,7 +114,7 @@ profile::app::sensu::server::subscriptions:
 # Device Manager
 device_manager::devices:
   9000v.puppet.demo:
-    ensure: absent
+    ensure: present
     type: cisco_nexus
     credentials:
       address:   '9000v.puppet.demo'
@@ -124,7 +124,7 @@ device_manager::devices:
       transport: 'https'
     run_interval: 30  
   nxos9ksw2.puppet.demo:
-    ensure: absent
+    ensure: present
     type: cisco_nexus
     credentials:
       address:   'nxos9ksw2.puppet.demo'
