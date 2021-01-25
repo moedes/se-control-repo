@@ -3,7 +3,7 @@ profile::infrastructure::network::nexus::hostname: "nxos9ksw1"
 
 profile::infrastructure::network::nexus::vlans:
   "200":
-    ensure: 'present'
+    ensure: 'absent'
     shutdown: 'false'
     state: 'active'
     vlan_name: 'engineering-vlan'
@@ -30,7 +30,7 @@ profile::infrastructure::network::nexus::interfaces:
     shutdown: false
     mtu: "1500"
     switchport_mode: access
-    access_vlan: 200
+    access_vlan: 300
   "ethernet1/3":
     shutdown: false
     mtu: "1500"
