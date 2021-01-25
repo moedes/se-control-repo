@@ -1,5 +1,5 @@
 ---
-profile::infrastructure::network::nexus::hostname: "cisco9ka"
+profile::infrastructure::network::nexus::hostname: "nxos9ksw1"
 
 profile::infrastructure::network::nexus::vlans:
   "200":
