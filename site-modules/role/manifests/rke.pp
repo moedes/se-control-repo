@@ -3,4 +3,5 @@ class role::rke {
     # include profile::platform::baseline::users::linux
     include example::rke::dockeruser
     include ntp
+    include example::firewall
 }
