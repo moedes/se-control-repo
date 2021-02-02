@@ -5,7 +5,7 @@ class profile::app::docker {
   }
 
   class {'docker':
-    version => 'latest',
+    version => '19.03.15',
   }
 
 }
