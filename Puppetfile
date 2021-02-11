@@ -143,3 +143,7 @@ mod 'jenkins',
 mod 'netstat',
     git: 'https://github.com/ipcrm/ipcrm-netstat.git',
     ref: '64bcee0'
+
+mod 'ciscomanage',
+    git: 'https://github.com/moedes/ciscomanage.git',
+    ref: 'a3f2566'
