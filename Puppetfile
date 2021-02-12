@@ -146,4 +146,4 @@ mod 'netstat',
 
 mod 'ciscomanage',
     git: 'https://github.com/moedes/ciscomanage.git',
-    ref: '8b29f941'
+    ref: 'eaeeffd2'
