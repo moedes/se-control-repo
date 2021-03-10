@@ -63,6 +63,7 @@ mod 'puppetlabs-translate', '1.2.0'
 mod 'puppetlabs-vcsrepo', '2.4.0'
 
 # Forge Community Modules
+mod 'puppet-yum', '4.3.0'
 mod 'WhatsARanjit-node_manager', '0.7.1'
 mod 'WhatsARanjit-diskspace', '0.2.0'
 mod 'ajjahn-samba', '0.5.0'
